@@ -11,7 +11,6 @@ permalink: /about/
 ## 만나서 반갑습니다
 
 K대에 재학중인 Yoong이라고 합니다
-
 소통해요~.
 
 matilda38@naver.com
