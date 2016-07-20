@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Travelogue is a minimal, single-column Jekyll theme that provides an immersive read experience for your readers.
 
-![Post](https://dl.dropboxusercontent.com/u/18322837/GitHub/Travelogue/Post.png)
 
-## Getting Started
-The theme provides a complete Jekyll setup. Download it and start the Jekyll server.
+![Post](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/IMG_3306.JPG)
 
-    git clone https://github.com/SalGnt/Travelogue.git
-    cd Travelogue
-    jekyll serve
+## 만나서 반갑습니다
 
-Visit the [Jekyll website](http://jekyllrb.com/) for more information.
+K대에 재학중인 Yoong이라고 합니다
+
+소통해요~.
+
+matilda38@naver.com
