@@ -32,7 +32,12 @@ rails g scaffold evaluation title:string author:string content:text subject_id:i
 evaluation.rb
 {%highlight ruby%}
 belongs_to :subject
+
+validates :name,  :presence => true
+validates :title, :presence => true,
+                :length => { :minimum => 5 }
 {% endhighlight %}
+validates 문 같은 경우에는, name을 반드시 작성, title의 경우에는 반드시 작성해야하고 길이가 최소 5자 이상이어야 한다는 조건입니다. 저 조건을 만족하여야지, evaluation table이 제대로 create/update 된다는 것입니다.
 
 subject.rb
 {%highlight ruby%}
@@ -113,6 +118,17 @@ end
 
 기본적인 crud가 구현이 되어있고 주석처리 되어 있는 부분은 기본 routing 되어있는 것입니다. 가장 첫줄의
 'before_action :set_subject, only: [:show, :edit, :update, :destroy]'의 경우에는 해당 action 수행 전에 set_subject 액션을 먼저 수행해라. 즉, 밑에 보시면 알겠지만, id로 먼저 해당 과목을 찾고 @subject에 집어 넣는다. 그렇다면 params[:id]는 어디서 오는가? 바로 view 파일에서 옵니다.
+{% highlight html%}
+        <% @timelines.each do |timeline| %>
+               <li>
+                  <time class="cbp_tmtime" datetime="<%=timeline.created_at%>"><span><%=timeline.date%></span><span><%=timeline.time%></span></time>
+                  <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                  <div class="cbp_tmlabel">
+                  <h2><%=timeline.title%></h2>
+                  <p><%=timeline.content%></p>
+                </div>
+                </li>
+              <% end %>
 
 
 
