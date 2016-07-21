@@ -1,6 +1,6 @@
 # Site settings
-name: Travelogue
-description: 'A minimal, single-column Jekyll theme that provides an immersive read experience for your readers'
+name: matilda38
+description: ''
 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'matilda38.github.io' # the base hostname & protocol for your site
