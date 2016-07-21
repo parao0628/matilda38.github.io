@@ -40,3 +40,5 @@ defaults:
 gems:
     - jekyll-feed
     - jekyll-sitemap
+    - jekyll-paginate
+    - jekyll-watch
