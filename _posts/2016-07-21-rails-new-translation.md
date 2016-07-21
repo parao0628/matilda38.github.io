@@ -1,32 +1,34 @@
 ---
 layout: post
-title: "rails 5가 출시되었습니다!"
+title: "rails 5 업데이트!"
 date: 2016-07-21
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
     - https://i.ytimg.com/vi/_0NM7Ag73MM/maxresdefault.jpg
-thumb: http://feelgrafix.com/data/background/background-9.jpg
+thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
 categories: development work
 tags: home coding matilda38.github.io
 ---
 
-일단 영어 원문을 올려 놓습니다...언젠간 번역할거니까...
+**일단 영어 원문을 올려 놓습니다...언젠간 번역할거니까...**
 
-Rails 5.0: Action Cable, API mode, and so much more
+*Rails 5.0: Action Cable, API mode, and so much more*
 
-After six months of polish, four betas, and two release candidates, Rails 5.0 is finally done! It’s taken hundreds of contributors and thousands of commits to get here, but what a destination: Rails 5.0 is without a doubt the best, most complete version of Rails yet. It’s incredible that this community is still going so strong after so long. Thanks to everyone who helped get us here.
+레일즈 5.0이 출시되었습니다. 역시 바로 바로 업그레이드 해줘야겠죠. 본 포스팅에서 제시하는 업그레이드법은 rails 4.2.0 이상에서 업그레이드 할때입니다. 전 4.2.5에서 업그레이드 했습니다. rails -v로 버전을 확인해보세요.
 
-The two star features of Rails 5.0 are as follows:
+공식홈페이지에 따르면, 4번의 베타를 거친 끝에 드디어 5.0이 제대로 release되었다고 합니다. 가장 완전한 버전이라 확신한다고 하네요!가장 두드러진 특징 두 가지 먼저!
 
-Action Cable
+>Action Cable은 rails에서 web socket을 다룰때 필요한 framework라고 합니다. server-side를 위한 channel layer와 client-side를 위한 javascript layer를 이어준다고 하는데
 
-Action Cable is a brand-new framework for handling WebSockets in Rails. It’s a completely integrated solution for managing connections, a channels layer for server-side processing, and a JavaScript layer for client-side interaction. It’s incredibly easy to use, and makes designing live features like chat, notifications, and presence so much easier. It’s what’s powering all those features of Basecamp 3, if you want to see it in action.
+*뭔소리다냐? 실시간 채팅이나 알림을 쉽게 해준다고 하는데, web socket을 공부해야 할듯합니다 Basecamp3는 또 뭘까요 ㅋㅋㅋ*
 
-What’s really lovely about Action Cable is that you get access to your entire Active Record and PORO domain model in your WebSockets work. We even added a brand-new ActionController::Renderer system that makes it trivial to render your templates outside of controllers, when you want to reuse server-side templates for WebSocket responses.
+>action cable이 진짜 사랑스러운 건 당신의 웹 소켓 작업에서 active record와 poro에 접근할 수 있다는 것입니다.
 
-In development, Action Cable runs in-process with the rest of your app. To do this, we’ve switched the default development server from Webrick to Puma. In production, you may well want to run Action Cable servers in their own processes. That’s how we run it at Basecamp at scale.
+*디비에 접근 가능하단 건가?*
 
-Special thanks to Pratik Naik, Javan Makhmali and Matthew Draper for their formative work on Action Cable.
+>개발시에, action cable은 당신의 앱 나머지와 in process로 실행됩니다. 그걸 위해 기본 서버 환경을 webbrick에서 puma로 바꿨다고 하네요. production 시에는 action cable server가 각자 process에서 실행되도록 원할 수 있다. 그게 basecamp에서 우리가 하는 거다.
+
+*점점 미궁에 빠지고 있습니다.*
 
 API mode
 
@@ -45,16 +47,10 @@ ApplicationRecord has been born as a default parent class of all models created 
 ActiveRecord::Relation#in_batches makes it much easier to deal with record work in batches at a time to lessen memory overloads.
 Post.where(‘id = 1’).or(Post.where(‘id = 2’)) gives you exactly what you’d think!
 No more accidentally halting Active Record callbacks because the last statement is false. Now you throw(:abort) explicitly!
-You should really checkout the CHANGELOGs, though. There’s just so much new and good stuff available in all the frameworks:
 
-Action Mailer CHANGELOG
-Action Pack CHANGELOG
-Action View CHANGELOG
-Active Model CHANGELOG
-Active Record CHANGELOG
-Active Support CHANGELOG
-Active Job CHANGELOG
-Railties CHANGELOG
+여러 changelog들이 link되어 있습니다.(mailer model record등 다양하네요)
+
+
 Rails 5.0 also ships with Turbolinks 5 – the one with native iOS and Android wrapper implementations! If you’ve dismissed Turbolinks in the past, I urge you to checkout Sam Stephenson’s RailsConf presentation: Turbolinks 5: I Can’t Believe It’s Not Native!.
 
 There’s even more detail in the full Rails 5.0 release notes and Claudio B. did a nice little slide deck walking through some of his favorite improvements (and removals!). And I did a brand-new let’s build a blog in Rails 5 video to demonstrate the basics.

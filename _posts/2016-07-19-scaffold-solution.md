@@ -117,18 +117,42 @@ end
 보시면 알겠지만 코드가 다 미리 짜져있습니다..헉! scaffold란 이런것입니다 여러분!
 
 기본적인 crud가 구현이 되어있고 주석처리 되어 있는 부분은 기본 routing 되어있는 것입니다. 가장 첫줄의
-'before_action :set_subject, only: [:show, :edit, :update, :destroy]'의 경우에는 해당 action 수행 전에 set_subject 액션을 먼저 수행해라. 즉, 밑에 보시면 알겠지만, id로 먼저 해당 과목을 찾고 @subject에 집어 넣는다. 그렇다면 params[:id]는 어디서 오는가? 바로 view 파일에서 옵니다.
+'before_action :set_subject, only: [:show, :edit, :update, :destroy]'
+의 경우에는 해당 action 수행 전에 set_subject 액션을 먼저 수행해라. 즉, 밑에 보시면 알겠지만, id로 먼저 해당 과목을 찾고 @subject에 집어 넣는다. 그렇다면 params[:id]는 어디서 오는가? 바로 view 파일에서 옵니다.
 {% highlight html%}
-        <% @timelines.each do |timeline| %>
-               <li>
-                  <time class="cbp_tmtime" datetime="<%=timeline.created_at%>"><span><%=timeline.date%></span><span><%=timeline.time%></span></time>
-                  <div class="cbp_tmicon cbp_tmicon-screen"></div>
-                  <div class="cbp_tmlabel">
-                  <h2><%=timeline.title%></h2>
-                  <p><%=timeline.content%></p>
-                </div>
-                </li>
-              <% end %>
-
+<% @subjects.each do |s| %>
+<div class="col-sm-6 col-md-4">
+	<h3><%=cb.name%></h3>
+	<p>
+	<%= link_to 'evaluation', subject_evaluations_path(s), class:'btn btn-primary waves' %>
 {% endhighlight %}
+여기를 주목해보면 이거는 subject/:id/evaluations로 이동하게 됩니다.(rake routes 참고) method는 get이구요! 즉 해당 과목의 객체를 보내면(s)자동으로 id가 전송되는 것이지요. 그래서 controller에서 params[:id]로 해당 과목을 받을 수 있었던 겁니다. 이 방법을 통해 해당 과목에 대한 평가를 조회할 수 있습니다.
+
+또 하나 중요한 부분은 routing을 봅시다
+
+{%highlight ruby%}
+Rails.application.routes.draw do
+  # see http://guides.rubyonrails.org/routing.html
+    root 'subjects#index'
+    devise_for :users
+
+    resources :subjects do
+      resources :evaluations
+    end
+end
+{% endhighlight %}
+마지막 resources에서 subject와 evaluation 사이의 종속 관계를 알 수 있습니다. rake routes를 해보시면 알겠지만 저 조치로 인해,
+
+{%highlight ruby%}
+  subject_evaluations    GET    /celebrities/:subject_id/evaluations(.:format)          evaluations#index
+                         POST   /celebrities/:subject_id/evaluations(.:format)          evaluations#create
+  new_subject_evaluation GET    /celebrities/:subject_id/evaluations/new(.:format)      evaluations#new
+ edit_subject_evaluation GET    /celebrities/:subject_id/evaluations/:id/edit(.:format) evaluations#edit
+      subject_evaluation GET    /celebrities/:subject_id/evaluations/:id(.:format)      evaluations#show
+                         PATCH  /celebrities/:subject_id/evaluations/:id(.:format)      evaluations#update
+                         PUT    /celebrities/:subject_id/evaluations/:id(.:format)      evaluations#update
+                         DELETE /celebrities/:subject_id/evaluations/:id(.:format)      evaluations#destroy
+{% endhighlight %}
+
+와 같은 routing이 가능해짐을 알 수 있습니다. 종속적인 routing이 가능해진것이지요!
 
