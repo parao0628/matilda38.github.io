@@ -31,6 +31,7 @@ tags: home coding matilda38.github.io
 *점점 미궁에 빠지고 있습니다.*
 
 API mode
+api가 무슨 뜻인지 올해초에 알게되었고 수업을 들으면 서 많이 접하게 되었죠. Application Programming Interface로 아랫단쪽(운영체제등)에서 윗단이 아랫단 신경안쓰고 편하게 쓸수 있도록 제공하는 interface입니다. framework와 비슷한 맥락에서 나온 개념이지용.
 
 Rails is not only a great choice when you want to build a full-stack application that uses server-side rendering of HTML templates, but also a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We’ve made this even clearer now with the new –api mode. If you create a new Rails application using rails new backend --api, you’ll get a slimmed down skeleton and configuration that assumes you’ll be working with JSON, not HTML.
 
@@ -58,3 +59,22 @@ There’s even more detail in the full Rails 5.0 release notes and Claudio B. di
 Your dynamic release manager duo for Rails 5.0 was Eileen M. Uchitelle and Sean Griffin. And the undisputed PR merge champ was Rafael França!
 
 Note: As per our maintenance policy, the release of Rails 5.0 will mean that bug fixes will only apply to 5.0.x, regular security issues to 5.0.x and 4.2.x, and severe security issues also to 5.0.x and 4.2.x (but when 5.1 drops, to 5.1.x, 5.0.x, and 4.2.x). This means 4.1.x and below will essentially be unsupported! Ruby 2.2.2+ is now also the only supported version of Rails 5.0+.
+
+rails update하기!
+
+gemfile에
+
+gem 'rails', '~> 5.0'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+해주고 bundle!
+
+그 뒤 rails app:update를 수행해주자.
+
+몇개 overwrite하면 update 완료!
+
+주의 devise가 안 먹히는 문제가 있었습니다.
+user.rb에
+'extend Devise::Models'
+gemfile에
+gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
+로 추가 해주니 다시 되더군요 주의하시길 바랍니다.
