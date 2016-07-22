@@ -56,19 +56,19 @@ celebrity.rb
 {%highlight ruby%}
   has_many :favorites
   has_many :user, through: :favorites
-{%endhighlight}
+{%endhighlight%}
 
 favorite.rb
 {%highlight ruby%}
   belongs_to :user
   belongs_to :celebrity
-{%endhighlight}
+{%endhighlight%}
 
 user.rb
 {%highlight ruby%}
   has_many :favorites
   has_many :celebrities, through: :favorites
-{%endhighlight}
+{%endhighlight%}
 
 추가해주면! 완료입니다...구현은!
 
@@ -76,7 +76,7 @@ user.rb
 
 {%highlight ruby%}
 current_user.favorites.create(celebrity: @celebrity)
-{%endhighlight}
+{%endhighlight%}
 
 현재 유저가 좋아하는 스타를 즐겨찾기에 넣고 싶을 때! 버튼을 클릭하면 자동으로 넣어지게 하기 위해 짠 코드입니다. user가 연결되어있는 celebrity는 객체로 받아왔습니다.
 
@@ -90,7 +90,7 @@ bar에 항상 떠있는 view입니다.(application.html.erb)
         <li><%= link_to s.name, celebrity_timelines_path(s), class:'a'%></li>
        <%end%>
     <%end%>
-{%endhighlight}
+{%endhighlight%}
 
 $stars라는 괴이한 변수를 선언했는데, 페이지가 이동해도 계속 유지되어야 하기 때문에 전역변수로 설정해서입니다.
 
@@ -98,6 +98,6 @@ $stars라는 괴이한 변수를 선언했는데, 페이지가 이동해도 계�
     if user_signed_in?
        $stars=current_user.celebrities
     end
-{%endhighlight}
+{%endhighlight%}
 
 celebrity_controller에 이렇게 변수를 선언했습니다. favorite으로 연결되어있기때문에 저렇게 .celebrities로 호출이 가능한것이죠.
