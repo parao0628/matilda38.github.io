@@ -14,7 +14,9 @@ scaffold로 쉽게 rails application을 만드는 걸 접했을땐 정말 신세
 
 이제 여러분께 그 경험을 나누려고 합니다.
 
-오늘은 scaffold로 수강평가사이트를 만들어 보겠습니다! 일단 과목 정보를 담은 table, 과목에 대한 평가를 담은 evaluation table 두개가 필요합니다.
+##오늘은 scaffold로 수강평가사이트를 만들어 보겠습니다!
+
+일단 과목 정보를 담은 table, 과목에 대한 평가를 담은 evaluation table 두개가 필요합니다.
 
 두 개의 테이블은 1:N 관계가 되겠죠.
 
