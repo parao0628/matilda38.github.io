@@ -9,7 +9,6 @@ thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
 categories: development work
 tags: home coding matilda38.github.io
 ---
-
 **일단 영어 원문을 올려 놓습니다...언젠간 번역할거니까...**
 
 *Rails 5.0: Action Cable, API mode, and so much more*
@@ -31,34 +30,33 @@ tags: home coding matilda38.github.io
 *점점 미궁에 빠지고 있습니다.*
 
 API mode
-api가 무슨 뜻인지 올해초에 알게되었고 수업을 들으면 서 많이 접하게 되었죠. Application Programming Interface로 아랫단쪽(운영체제등)에서 윗단이 아랫단 신경안쓰고 편하게 쓸수 있도록 제공하는 interface입니다. framework와 비슷한 맥락에서 나온 개념이지용.
 
+api가 무슨 뜻인지 올해초에 알게되었고 수업을 들으면 서 많이 접하게 되었죠. Application Programming Interface로 아랫단쪽(운영체제등)에서 윗단이 아랫단 신경안쓰고 편하게 쓸수 있도록 제공하는 interface입니다. framework와 비슷한 맥락에서 나온 개념이지용.
 Rails is not only a great choice when you want to build a full-stack application that uses server-side rendering of HTML templates, but also a great companion for the new crop of client-side JavaScript or native applications that just needs the backend to speak JSON. We’ve made this even clearer now with the new –api mode. If you create a new Rails application using rails new backend --api, you’ll get a slimmed down skeleton and configuration that assumes you’ll be working with JSON, not HTML.
 
 There’s still more work to be done on this feature, but we’re off to a great start. By default, API mode just relies on #to_json calls on model classes. But you can either use Jbuilder, Active Model Serializers, or look at the new JSONAPI::Resources project for a more advanced solution.
 
 Thanks in particular to Santiago Pastorino and Jorge Bejar for making this happen.
 
-Other highlights
+**다른 주요 업데이트 사항!**
 
-One Rails Command instead of the split-brain setup between rake and rails, so now it’s bin/rails db:migrate instead of bin/rake db:migrate (herding by Kasper Timm Hansen).
-New Attributes API by Sean Griffin.
-The test runner now reports failures inline, so you don’t have to complete the suite to see what went wrong.
-ApplicationRecord has been born as a default parent class of all models created by the generators.
+이제 rake db:migrate 아니고 rails db:migrate입니다. 헷갈리셨던 분들께 좋은 소식일듯하네요!
+test runner가 이제 실패를 inline으로 report하기 때문에 뭐가 문젠지 살피기 위해 suite를 완료할 필요가 없답니다.
+application record라는 모든 모델들에대한 부모 class가 새로 생긴듯합니다.
 ActiveRecord::Relation#in_batches makes it much easier to deal with record work in batches at a time to lessen memory overloads.
+관계정의에 in_batches가 생겨서 악 뭔소리지??
 Post.where(‘id = 1’).or(Post.where(‘id = 2’)) gives you exactly what you’d think!
+rails console창에서 Celebrity.find_by(id:1)이렇게 했던거랑 비슷한걸까요.
+예전엔 이게 안됬나? where로 id찾는거였던것 같은데??
+
 No more accidentally halting Active Record callbacks because the last statement is false. Now you throw(:abort) explicitly!
+이것도 뭔소린지...
 
-여러 changelog들이 link되어 있습니다.(mailer model record등 다양하네요)
+언급되지 않은 업데이트들로 여러 changelog들이 link되어 있습니다.(mailer model record등 다양하네요)
 
 
-Rails 5.0 also ships with Turbolinks 5 – the one with native iOS and Android wrapper implementations! If you’ve dismissed Turbolinks in the past, I urge you to checkout Sam Stephenson’s RailsConf presentation: Turbolinks 5: I Can’t Believe It’s Not Native!.
-
-There’s even more detail in the full Rails 5.0 release notes and Claudio B. did a nice little slide deck walking through some of his favorite improvements (and removals!). And I did a brand-new let’s build a blog in Rails 5 video to demonstrate the basics.
-
-Your dynamic release manager duo for Rails 5.0 was Eileen M. Uchitelle and Sean Griffin. And the undisputed PR merge champ was Rafael França!
-
-Note: As per our maintenance policy, the release of Rails 5.0 will mean that bug fixes will only apply to 5.0.x, regular security issues to 5.0.x and 4.2.x, and severe security issues also to 5.0.x and 4.2.x (but when 5.1 drops, to 5.1.x, 5.0.x, and 4.2.x). This means 4.1.x and below will essentially be unsupported! Ruby 2.2.2+ is now also the only supported version of Rails 5.0+.
+Rails 5.0 also ships with Turbolinks 5 – the one with native iOS and Android wrapper implementations! If you’ve dismissed Turbolinks in the past,
+I urge you to checkout Sam Stephenson’s RailsConf presentation: Turbolinks 5: I Can’t Believe It’s Not Native!.
 
 rails update하기!
 

@@ -9,7 +9,9 @@ categories: development work
 tags: home coding matilda38.github.io
 ---
 
-## 드디어 ihanxing rails application 기능 대부분 구현.
+## 드디어 ihanxing rails application
+
+## 기능 대부분 구현.
 
 일단 user와 celebrity를 연결하는 (M:N관계) favorite이라는 table을 generate하였고, 그 과정에서
 'has_many :celebrities, through: :favorites'을 사용!
@@ -102,3 +104,7 @@ $stars라는 괴이한 변수를 선언했는데, 페이지가 이동해도 계�
 {%endhighlight%}
 
 celebrity_controller에 이렇게 변수를 선언했습니다. favorite으로 연결되어있기때문에 저렇게 .celebrities로 호출이 가능한것이죠.
+
+이제 사용자별 즐겨찾기 스타 설정 가능! 흐..드디어!
+
+p.s 좋아요 기능 찾아봤는데 그게 진짜 어렵다.(ajax 때문에..)
