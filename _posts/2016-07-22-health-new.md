@@ -84,35 +84,15 @@ celebrities/celebrity_id/posts/new로 가게되어 post의 new 액션이 수행�
 
 {%highlight html%}
 <%= form_for(post,url: celebrity_posts_path) do |f| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+생략.
   <div class="field">
     <%= f.hidden_field :user_id, :value => current_user.id %>
     <%= f.hidden_field :celebrity_id, :value => @celebrity.id %>
   </div>
-
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
 {%endhighlight%}
+user_id, celebrity_id가 hidden field로 전송된다. 그 값은 각각 현재 접속 유저, set_celebrity로 찾아진 해당 연예인의 id이다.
+routing의 경우, helper, path의 적극 사용으로 이런 hidden field 사용이 필요 없었으나, 직접 업로드를 가능하게 해야하는 post의 특성상 이렇게 hidden field를 사용할 수 밖에 없었다.
+
+
+
