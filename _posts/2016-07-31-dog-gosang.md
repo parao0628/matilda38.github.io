@@ -130,3 +130,31 @@ destroy.js.erb
 {% highlight js%}
 $("#comment_<%=@comment.id %>").slideUp('fast');
 {%endhighlight%}
+
+참고로
+
+{% hightlight ruby%}
+class CreateComments < ActiveRecord::Migration[5.0]
+  def change
+    create_table :comments do |t|
+
+      # user와 post에 종속
+      t.integer :user_id
+      t.integer :post_id
+      t.integer :celebrity_id
+
+      t.string :content
+
+      t.timestamps
+    end
+  end
+end
+
+class Comment < ApplicationRecord
+  belongs_to :post
+  belongs_to :user
+end
+
+{%endhighlight%}
+참고로 이 두개는 기본적으로 되어있어야한다.
+
