@@ -8,12 +8,13 @@ thumb: https://media.timeout.com/images/100644443/image.jpg
 categories: development work
 tags: home work coding matilda38.github.io
 ---
+
 3일동안 celebrity#show 에 게시판 만들고 그 안에 post를 만들고 또 그 아래 댓글을 ajax로 하다가 진짜 죽는줄 알았다. 땀은 줄줄 나는데 망할 놈의 404 500 에러는 진짜 계속나고...처음엔 통신문젠가 했는데 역시 코드 문제였다. 코드 문제로 골머리를 앓을땐, 특히 웹개발할 땐 터미널의 로그를 보도록 한다. 거기에 답이 있다. 에러를 반드시 표시한다.
 
 일단 날라갈지도 모르므로...메모를...git 너무 무섭다...
 
 ## comment_controller.rb
-{% highlight ruby%}
+{%highlight ruby%}
 class CommentsController < ApplicationController
   before_action :comment_params, only: [:create]
 
@@ -53,7 +54,7 @@ end
 
 ## celebrity#show
 
-{% highlight html%}
+{%highlight html%}
 <h2>댓글</h2>
     <div class="comments">
      <div class="comment_header">
@@ -77,7 +78,7 @@ end
 
 _comment.html.erb
 
-{% highlight html%}
+{%highlight html%}
 
 <li id="comment_<%=comment.id %>">
   <%= comment.content%>
@@ -89,7 +90,7 @@ _comment.html.erb
 
 comments/_form.html.erb
 
-{% highlight html%}
+{%highlight html%}
 
 <% @comment = post.comments.new%>
 <!--댓글 form-->
@@ -116,24 +117,26 @@ comments/_form.html.erb
 {%endhighlight%}
 
 create.js.erb
-{% highlight js%}
+{%highlight js%}
+
 <% if @comment.errors.size == 0 %>
 $('<%=j render @comment %>').appendTo($("#comments_list_<%=@post.id %>")).hide().fadeIn('fast');
 $("#comments_form_<%=@post.id %> form")[0].reset();
 <% else %>
 alert("Please submit after commenting...");
 <% end %>
+
 {%endhighlight%}
 
 destroy.js.erb
 
-{% highlight js%}
+{%highlight js%}
 $("#comment_<%=@comment.id %>").slideUp('fast');
 {%endhighlight%}
 
 참고로
 
-{% hightlight ruby%}
+{%highlight ruby%}
 class CreateComments < ActiveRecord::Migration[5.0]
   def change
     create_table :comments do |t|
@@ -158,3 +161,8 @@ end
 {%endhighlight%}
 참고로 이 두개는 기본적으로 되어있어야한다.
 
+말이 씨가 된다더니 이 포스팅 끝나고 fetch 강제로 해서 업데이트 상황 다운 받으려다 망했다.
+
+무섭다 정말..ㅠㅠㅠㅠㅠㅠㅠㅠ
+
+깃 제대로 배워야겠다 진짜 ㅠㅠ
