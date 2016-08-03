@@ -108,3 +108,24 @@ celebrity_controller에 이렇게 변수를 선언했습니다. favorite으로 �
 이제 사용자별 즐겨찾기 스타 설정 가능! 흐..드디어!
 
 p.s 좋아요 기능 찾아봤는데 그게 진짜 어렵다.(ajax 때문에..)
+
+$stars가 아무래도 걸려서.. 결국 수정하였습니다! applicationcontroller에서
+
+{%highlight ruby%}
+def set_variable
+
+end
+{%endhighlight%}
+일단 favorite이란 새로운 action 을 celebrity controller에 만들고!
+{%highlight ruby%}
+    def favorite
+        current_user.favorites.create(celebrity: @celebrity)
+    end
+{%endhighlight%}
+
+여기서 @celebrity는 before_action :set_celebrity에서 찾은건데
+
+routing을 get 'favorite/:id' => 'celebrity#favorite"로 설정하여 @celebrity= Celebrity.find(:id)로 해당 연예인을 찾았습니다.
+
+
+

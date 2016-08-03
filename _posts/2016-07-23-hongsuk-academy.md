@@ -10,3 +10,5 @@ tags: home work coding matilda38.github.io
 ---
 
 ![Sample Image](/assets/images/hackathon.jpg)
+
+운영체제 수업때 쓴 cpu scheduler를 포스팅하려 했는데...귀차니즘 ㅠㅠ
