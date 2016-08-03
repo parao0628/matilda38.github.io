@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "밤샘 코딩! 드디어 완성."
+title: "밤샘 코딩! 드디어 완성.(0802 수정)"
 date: 2016-07-21
 backgrounds:
     - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/tube.jpg
@@ -112,20 +112,71 @@ p.s 좋아요 기능 찾아봤는데 그게 진짜 어렵다.(ajax 때문에..)
 $stars가 아무래도 걸려서.. 결국 수정하였습니다! applicationcontroller에서
 
 {%highlight ruby%}
-def set_variable
+class ApplicationController < ActionController::Base
+  # Prevent CSRF attacks by raising an exception.
+  # For APIs, you may want to use :null_session instead.
+  protect_from_forgery with: :exception
+  ActiveSupport.halt_callback_chains_on_return_false = false
+  before_action :set_variable
+
+  def set_variable
+    if user_signed_in?
+      @stars=current_user.celebrities
+    end
+  end
 
 end
 {%endhighlight%}
-일단 favorite이란 새로운 action 을 celebrity controller에 만들고!
+로 set variable이라는 action를 만든후, @stars에 current_user의 연예인들을(favorite으로 연결되어있습니다) 호출하여 집어넣었다.
+application controller이기 때문에 모든 controller에 적용된다. 하지만 주 목적은 layout 에 application.html.erb 에 적용시키기 위해 해당 controller에 넣었다. before_action로 무조건 set_variable을 실행하게 하였다.
+따라서! application.html.erb에서 사용가능하게 되었다! 이렇게 쉬운걸 $stars라는 이상한 전역변수를 만들었다니! 아는 대로 보인다더니..암튼!
+
+이걸 해결하고 나니 더 중대한 문제를 발견했다. 물론 변수 형태를 바꿔서 생긴 문제는 아니었고, 원래 문제였는데 지금 밝혀진것...상세페이지를 방문하면...무조건 favorite에 추가가 된다...도대체 왜...일단 고쳐야겠다는 생각이 들어
+'onclick=<%current_user.favorites.create(celebrity: @celebrity)%>'부터 고쳤다. 얘를 고치고 대신
+
+{%highlight html%}
+<div class="profile-userbuttons">
+          <button class="btn btn-danger btn-lg" onclick="favorite()" data-toggle="popover" data-content="등록 완료!" data-placement="top"><i class="fa fa-star-o"></i> Favorite</button>
+        </div>
+        <script>
+          function favorite() {
+            var xhttp;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (xhttp.readyState == 4 && xhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xhttp.responseText;
+              }
+            };
+            xhttp.open("GET", "/favorite/<%=@celebrity.id%>", true);
+            xhttp.send();
+          }
+        </script>
+
+{%endhighlight%}
+이런식으로 view파일을 수정했다. ajax를 사용한 셈이다. 즉, click 되면 favorite()이란 함수를 수행하여,
+
+xhttp.open("GET", "/favorite/<%=@celebrity.id%>", true); GET 방식으로 접속하였다
+
+routing을 get 'favorite/:id' => 'celebrity#favorite"로 설정하여 해당 연예인의 id를 전달한 셈이 된다.
+
+controller를 보면
+
+favorite이란 새로운 action 을 celebrity controller에 만들고! favorite 추가해주는 코드를 여기에다 넣었다.
+
 {%highlight ruby%}
     def favorite
         current_user.favorites.create(celebrity: @celebrity)
     end
 {%endhighlight%}
 
+@celebrity= Celebrity.find(:id)로 해당 연예인을 찾았다. routing이 /:id으로 되어있기 때문에 가능한 일이다.
+
 여기서 @celebrity는 before_action :set_celebrity에서 찾은건데
 
-routing을 get 'favorite/:id' => 'celebrity#favorite"로 설정하여 @celebrity= Celebrity.find(:id)로 해당 연예인을 찾았습니다.
+routing을 get 'favorite/:id' => 'celebrity#favorite"로 설정하여 @celebrity= Celebrity.find(:id)로 해당 연예인을 찾았다.
+
+
+끝!
 
 
 
