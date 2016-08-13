@@ -37,8 +37,20 @@ defaults:
         share_buttons: true
         disqus: true
 
+disqus : true
+
+analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-123-12' #FIXME
+    getclicky :
+      site_id : abc     #FIXME
+    mixpanel :
+        token : '_MIXPANEL_TOKEN_'  #FIXME
+
 gems:
     - jekyll-feed
     - jekyll-sitemap
     - jekyll-paginate
     - jekyll-watch
+
