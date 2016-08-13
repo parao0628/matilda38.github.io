@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="post">
     {% if page.reading_time %}
@@ -58,10 +59,10 @@ layout: default
             </span>
         </div>
         {% endif %}
-
         {% if page.comments %}
-          {% include comments.html %}
+            {% include comments.html %}
         {% endif %}
+
     </footer>
 
     {% include share.html %}
