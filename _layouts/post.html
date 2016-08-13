@@ -26,6 +26,11 @@ comments: true
         {{ content }}
     </article>
 
+    {% if site.disqus_shortname %}
+        {% include comments.html %}
+    {% endif %}
+
+
     <footer class="post-meta">
         {% if page.date %}
         <div class="meta">
@@ -58,9 +63,6 @@ comments: true
                 {% endfor %}
             </span>
         </div>
-        {% endif %}
-        {% if page.comments %}
-            {% include comments.html %}
         {% endif %}
 
     </footer>
