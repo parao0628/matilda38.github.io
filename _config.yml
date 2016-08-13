@@ -37,7 +37,7 @@ defaults:
         share_buttons: true
         disqus: true
 
-disqus : true
+comments : true
 
 analytics :
     provider : google

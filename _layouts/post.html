@@ -58,13 +58,14 @@ layout: default
             </span>
         </div>
         {% endif %}
+
         {% if page.comments %}
+          {% include comments.html %}
         {% endif %}
     </footer>
 
     {% include share.html %}
 
-    {% include disqus.html %}
 
 
 </div>
