@@ -50,6 +50,6 @@ console에 사이트가 등록되면 추가적으로 sitemap을 등록할 수 �
 
 이제
 
-!(Sample Image)[https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/se.jpg]
+![Sample Image](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/se.jpg)
 
 이렇게 검색이 되네요! >ㅇ< 밑에는 sitemap.xml에 등록한 내용이 출력되는걸 보실수 있습니다.
