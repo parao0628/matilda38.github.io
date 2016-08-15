@@ -15,11 +15,11 @@ layout: default
     {% endfor %}
 
     {% for page in site.pages %}
-    {% if page.layout != nil and page.layout != 'feed' %}
-    <url>
-        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-        <lastmod>{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
-    </url>
-    {% endif %}
+        {% if page.layout != nil and page.layout != 'feed' %}
+        <url>
+            <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
+            <lastmod>{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
+        </url>
+        {% endif %}
     {% endfor %}
 </urlset>
