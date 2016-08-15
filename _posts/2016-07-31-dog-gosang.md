@@ -4,7 +4,7 @@ title: "드디어 3일간의 개고생이 끝났다."
 date: 2016-07-31
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: https://media.timeout.com/images/100644443/image.jpg
+thumb: http://www.khuplaza.com/files/attach/images/27860/407/268/002/202-4700.jpg
 categories: development work
 tags: home work coding matilda38.github.io
 ---

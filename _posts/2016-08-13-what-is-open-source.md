@@ -4,12 +4,14 @@ title: "what is open source!"
 date: 2016-08-13
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
+thumb: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGrI2_gejSWa7kYiyZTNj6apIeOxUVAuiygQaiaqrQwCyc6ZFD
 categories: development career
 tags: home coding
 ---
 
-오픈 소스란 무엇인가
+살쪄서 바지가 꽉껴....
+
+## 오픈 소스란 무엇인가
 
 오픈소스는 말 그대로 오픈되어 있고, 협력적 방식인 소프트웨어 제작의 기본 방식이다. 오픈 소스는 당신이 해당 소프트웨어 프로젝트를 최종 수행할 수 있는 동시에 최초의 소스 코드로 접근할 수 있다는 것을 의미한다.
 

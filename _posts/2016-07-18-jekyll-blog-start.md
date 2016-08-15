@@ -4,7 +4,7 @@ title: "jekyll blog를 처음 시작하며"
 date: 2016-07-19
 backgrounds:
     - https://i.ytimg.com/vi/_0NM7Ag73MM/maxresdefault.jpg
-thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
+thumb: http://t1.daumcdn.net/liveboard/emoticon/kakaofriends/v3/ryan/022.gif
 categories: development work
 tags: home work coding matilda38.github.io
 ---

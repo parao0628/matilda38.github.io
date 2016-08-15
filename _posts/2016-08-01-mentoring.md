@@ -4,7 +4,7 @@ title: "mentoring 자료!"
 date: 2016-08-01
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
+thumb: http://mblogthumb4.phinf.naver.net/20160315_111/mkhjsk_1458023052522xOxyW_GIF/015.gif?type=w2
 categories: work
 tags: home coding matilda38.github.io
 ---
