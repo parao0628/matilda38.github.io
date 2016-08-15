@@ -3,7 +3,7 @@ name: matilda38
 description: ''
 
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'matilda38.github.io' # the base hostname & protocol for your site
+url: 'https://matilda38.github.io' # the base hostname & protocol for your site
 
 # Build settings
 highlighter: rouge

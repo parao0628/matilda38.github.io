@@ -36,3 +36,20 @@ post.html에
 이런식으로 추가해주었습니다. 몇시간을 삽질 하던게 이거 한방에 해결되었습니다. ㅠㅠㅠㅠㅠㅠㅠㅠ
 
 아무튼 지킬 화이팅~~.
+
+
+--추가 (2016.08.15 광복절)
+
+google search console에 내 사이트를 등록할 수 있습니다. 안내하는 몇가지 절차를 걸치면 구글에 제 블로그를 검색했을 때 제대로 검색되게 만들 수 있습니다.
+
+등록을 완료하면 메일도 오구요!
+
+최근에 Search Console에서 사이트를 확인(또는 사이트를 자동으로 확인하는 Blogger나 Google 사이트 도구에서 사이트 생성)한 것으로 Google 시스템에 표시됩니다.
+
+console에 사이트가 등록되면 추가적으로 sitemap을 등록할 수 도 있습니다. sitemap.xml을 등록하면 되는데 jekyll의 경우에는 gem이 존재합니다. 따라서 자동으로 생성해주고, 제 경우에는 sitemap error가 떠서 살펴봤더니 xml의 url에 https://가 빠져있었기 때문이었습니다. 주의하시길 바랍니다!
+
+이제
+
+!(Sample Image)[https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/se.jpg]
+
+이렇게 검색이 되네요! >ㅇ< 밑에는 sitemap.xml에 등록한 내용이 출력되는걸 보실수 있습니다.
