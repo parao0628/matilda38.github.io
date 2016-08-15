@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e2541bd-1740-4cf3-ba73-5833306e5123" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-08-07-django.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-08-12-git-learning.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-13-what-is-open-source.md" afterPath="$PROJECT_DIR$/_posts/2016-08-13-what-is-open-source.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-12-git-learning.md" afterPath="$PROJECT_DIR$/_posts/2016-08-12-git-learning.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-15-career.md" afterPath="$PROJECT_DIR$/_posts/2016-08-15-career.md" />
     </list>
     <ignored path="matilda38.github.io.iws" />
@@ -77,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-15-career.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-08-15-career.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-15-career.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="59" column="177" selection-start-line="59" selection-start-column="177" selection-end-line="59" selection-end-column="177" />
+            <state relative-caret-position="317">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-12-git-learning.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2016-08-12-git-learning.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-12-git-learning.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -169,8 +167,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-08-05-gokathon.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-13-what-is-open-source.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-07-django.md" />
-        <option value="$PROJECT_DIR$/_posts/2016-08-12-git-learning.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-15-career.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-12-git-learning.md" />
       </list>
     </option>
   </component>
@@ -460,12 +458,12 @@
       <workItem from="1470961690196" duration="2014000" />
       <workItem from="1471093028585" duration="12015000" />
       <workItem from="1471267943620" duration="1948000" />
-      <workItem from="1471271179494" duration="460000" />
+      <workItem from="1471271179494" duration="701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48050000" />
+    <option name="totallyTimeSpent" value="48291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="6" />
@@ -816,18 +814,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-12-git-learning.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-15-career.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="317">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-15-career.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-12-git-learning.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="59" column="177" selection-start-line="59" selection-start-column="177" selection-end-line="59" selection-end-column="177" />
+        <state relative-caret-position="240">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
           <folding />
         </state>
       </provider>
