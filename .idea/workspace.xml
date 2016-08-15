@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e2541bd-1740-4cf3-ba73-5833306e5123" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-15-career.md" afterPath="$PROJECT_DIR$/_posts/2016-08-15-career.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-05-gokathon.md" afterPath="$PROJECT_DIR$/_posts/2016-08-05-gokathon.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md" afterPath="$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md" />
     </list>
     <ignored path="matilda38.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="2016-08-11-peihanxing.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-08-11-peihanxing.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-08-05-gokathon.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-08-05-gokathon.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="32" column="89" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -84,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-15-career.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-08-15-career.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-08-15-career.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -94,21 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <file leaf-file-name="2016-08-16-oh-my-god.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,16 +157,16 @@
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/about.md" />
-        <option value="$PROJECT_DIR$/_posts/2016-08-05-gokathon.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-31-dog-gosang.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-01-mentoring.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-13-what-is-open-source.md" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2016-07-18-jekyll-blog-start.md" />
         <option value="$PROJECT_DIR$/_posts/2016-08-15-career.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-08-05-gokathon.md" />
       </list>
     </option>
   </component>
@@ -454,15 +455,15 @@
       <workItem from="1470232167873" duration="1311000" />
       <workItem from="1470961690196" duration="2014000" />
       <workItem from="1471093028585" duration="12015000" />
-      <workItem from="1471267943620" duration="723000" />
+      <workItem from="1471267943620" duration="1763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46365000" />
+    <option name="totallyTimeSpent" value="47405000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="716" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -643,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-05-gokathon.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-08-01-mentoring.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -701,24 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-11-peihanxing.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-08-13-what-is-open-source.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -820,6 +800,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-16-oh-my-god.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-11-peihanxing.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-08-05-gokathon.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="32" column="89" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="89" />
           <folding />
         </state>
       </provider>
