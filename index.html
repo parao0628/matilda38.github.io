@@ -4,7 +4,7 @@ home: true
 ---
 
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-<div id="player"></div>
+<div id="player">안녕</div>
 
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
@@ -19,9 +19,10 @@ home: true
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            height: '390',
-            width: '640',
-            videoId: 'M7lc1UVf-VE',
+            height: '190',
+            width: '300',
+            videoId: 'YKalIVv3Z24',
+            playerVars: { 'autoplay': 1, 'controls': 0 },
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -40,7 +41,7 @@ home: true
     var done = false;
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
+            setTimeout(stopVideo, 15000);
             done = true;
         }
     }
