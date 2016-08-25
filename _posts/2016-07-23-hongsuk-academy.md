@@ -5,7 +5,7 @@ date: 2016-07-23
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
 thumb: https://media.timeout.com/images/100644443/image.jpg
-categories: development work
+categories: development
 tags: home work coding matilda38.github.io
 ---
 

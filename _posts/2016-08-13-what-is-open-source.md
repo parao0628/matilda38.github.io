@@ -6,7 +6,7 @@ backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
 thumb: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGrI2_gejSWa7kYiyZTNj6apIeOxUVAuiygQaiaqrQwCyc6ZFD
 categories: development study
-tags: home coding
+tags: opensource
 ---
 
 살쪄서 바지가 꽉껴....
