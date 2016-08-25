@@ -34,3 +34,5 @@ Changes not staged for commit:
 Notice how hello.rb is listed twice in the status. The first change (adding a default) is staged and is ready to be committed. The second change (adding a comment) is unstaged. If you were to commit right now, the comment would not be saved in the repository.
 
 Let’s try that.
+
+GDG 세션에서 배운것도 활용하자.
