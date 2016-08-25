@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "node js 따라 배우기"
-date: 2016-08-16
+date: 2016-08-25
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
 thumb: http://www.australiansabroad.com.au/wp-content/uploads/2011/10/Spain_photos_2.jpg
