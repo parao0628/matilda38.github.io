@@ -5,7 +5,7 @@ date: 2016-07-19
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
     - https://i.ytimg.com/vi/_0NM7Ag73MM/maxresdefault.jpg
-thumb: https://i.ytimg.com/vi/_0NM7Ag73MM/maxresdefault.jpg
+thumb: http://cfile6.uf.tistory.com/image/2336953D57BE39373F9E5E
 categories: development work
 tags: home work coding matilda38.github.io
 ---
