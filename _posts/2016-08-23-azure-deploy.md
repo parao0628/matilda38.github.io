@@ -243,7 +243,7 @@ sudo service nginx restart
 
 
 ## **Deploy 완료...!**
-
+![sample Image](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/sc.png)
 
 # +추가
 
