@@ -6,7 +6,7 @@ backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
 thumb: http://previews.123rf.com/images/nito500/nito5001003/nito500100300271/6597215-vue-a-rienne-des-anciens-trimestre-de-S-ville-S-ville-Espagne--Banque-d'images.jpg
 categories: development study
-tags: python
+tags: azure deploy
 ---
 
 # 이 튜토리얼은 Nginx와 Passenger를 사용하여 Rails application 을 Azure에 Deploy하는 법을 다루고 있습니다.
@@ -72,26 +72,27 @@ sudo apt-get install -y curl gnupg build-essential
 
 rbenv는 rvm과 같은 루비 설치 관리자라고 생각하시면 됩니다.
 
+{% highlight Commandline %}
 '''
 $ git clone git://github.com/sstephenson/rbenv.git .rbenv
 '''
+{% endhighlight %}
 
 .bash_profile에 다음 행 추가
-
-'''
+{% highlight Commandline %}
 [ -f "$HOME/.profile" ] && source "$HOME/.profile"
 [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
-'''
+{% endhighlight %}
 
 .bashrc에 다음 추가.
 
-'''
+{% highlight Commandline %}
 export RBENV_ROOT="${HOME}/.rbenv"
 if [ -d "${RBENV_ROOT}" ]; then
   export PATH="${RBENV_ROOT}/bin:${PATH}"
   eval "$(rbenv init -)"
 fi
-'''
+{% endhighlight %}
 
 rbenv가 저장된 디렉토리를 RBENV_ROOT 환경 변수에 export 하고, rbenv 실행 파일이 들어 있는 디렉토리를 PATH에 추가한다.
 
@@ -103,21 +104,21 @@ rbenv가 설치 된 경로를 PATH에 저장해서 rbenv 실행시 엉뚱한게 
 
 ## 4. 재설정 및 bundler 설치, 재시작
 
-'''
+{% highlight Commandline %}
 rbenv rehash
 rbenv global 2.3.0
 ruby -v
 ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
 gem install bundler
-'''
+{% endhighlight %}
 
 # (주의) 이거 생각보다 오래걸립니다. 일반 컴퓨터에 설치하는 것보다 약간 더 오래걸린다고 보시면 됩니다. 에러 아닙니다!
 
 
-'''
+{% highlight Commandline %}
 sudo apt-get install -y nodejs &&
 sudo ln -sf /usr/bin/nodejs /usr/local/bin/node
-'''
+{% endhighlight %}
 nodejs 설치. Rails's asset pipeline compiler requires a Javascript runtime라서 설치한다고 합니다.
 
 /usr/bin/nodejs로의 연결을 /usr/local/bin/node로 바꿔주었군요.
@@ -137,7 +138,7 @@ capistrano는 루비로 작성된 원격 서버 automation과 deployment 툴입�
 
 암튼! 결론은 Passenger라는 툴로 갈아탔습니다. 그래서 이 포스팅이 Passenger+ Nginx 로 RoR Application을 Deploy하기! 가 되었죠 ㅎㅎ
 
-'''
+{% highlight Commandline %}
 # PGP key를 받고 설치. APT를 위한 HTTP 지원 추가.
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
 sudo apt-get install -y apt-transport-https ca-certificates
@@ -148,13 +149,15 @@ sudo apt-get update
 
 # Install Passenger + Nginx
 sudo apt-get install -y nginx-extras passenger
-'''
+{% endhighlight %}
 
 /etc/nginx에 설치 되었을 겁니다. /etc/nginx/nginx.conf 파일의
 
+{% highlight Commandline %}
 # include /etc/nginx/passenger.conf;
+
 요 주석을 풀어주세요. passenger 설정을 풀어주는 겁니다!
-'''
+
 # 재시작
 sudo service nginx restart
 
@@ -170,6 +173,6 @@ sudo /usr/sbin/passenger-memory-stats
 # apt로 업데이트 해주세요.
 sudo apt-get update
 sudo apt-get upgrade
-'''
+{% endhighlight %}
 
 ## app deploy 하기
