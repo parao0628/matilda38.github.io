@@ -11,10 +11,10 @@ tags: azure deploy
 
 # 이 튜토리얼은 Nginx와 Passenger를 사용하여 Rails application 을 Azure에 Deploy하는 법을 다루고 있습니다.
 
-[참고 튜토리얼](https://github.com/m-gagne/azure-tutorials/blob/master/tutorial-windows-azure-ruby-on-rails-capistrano-3-postgresql.md)
-단, azure의 예전 포탈의 내용이라는 점 주의하시길. 이걸 보고 저도 azure deploy 한글판 튜토리얼을 작성해야겠다는
+>[참고 튜토리얼](https://github.com/m-gagne/azure-tutorials/blob/master/tutorial-windows-azure-ruby-on-rails-capistrano-3-postgresql.md)
+단, azure의 예전 포탈의 내용이라는 점 주의하시길. 이걸 보고 저도 azure deploy 한글판 튜토리얼을 작성해야겠다는 생각을 하게 되었습니다.
 
-[Deploying a Ruby app with Passenger to production](https://www.phusionpassenger.com/library/walkthroughs/deploy/)
+>[Deploying a Ruby app with Passenger to production](https://www.phusionpassenger.com/library/walkthroughs/deploy/)
 passenger 라는 서버 deploy tool의 tutorial이었고 개인적으로 가장 친절하고 도움되는 튜토리얼이었습니다.
 
 
@@ -23,7 +23,7 @@ passenger 라는 서버 deploy tool의 tutorial이었고 개인적으로 가장 
 SSH 공개키 만들기
 [ssh란?](https://en.wikipedia.org/wiki/Secure_Shell)
 
-원격 접속. 일반 로그인 프로그램들이 패킷을 전송할 때 평문으로 전달을 하기 때문에 패스워드를 쉽게 가로챌 수 있는 것에 비해 SSH는 패킷 자체를 암호화 하여 전송하기 때문에 원격 관리에 혁명을 일으킨 프로그램입니다.
+:원격 접속. 일반 로그인 프로그램들이 패킷을 전송할 때 평문으로 전달을 하기 때문에 패스워드를 쉽게 가로챌 수 있는 것에 비해 SSH는 패킷 자체를 암호화 하여 전송하기 때문에 원격 관리에 혁명을 일으킨 프로그램입니다.
 
 SSH 서버를 운영하지 않는 서버 관리자는 보안에 전혀 관심이 없다고도 할 수 있습니다. 여기서는 ssh1, ssh2 와 호환이 되는 OpenSSH로 설명을 하며 인증키 방식을 설명하지 안고 패드워드 방식으로 설명을 합니다
 
@@ -73,9 +73,7 @@ sudo apt-get install -y curl gnupg build-essential
 rbenv는 rvm과 같은 루비 설치 관리자라고 생각하시면 됩니다.
 
 {% highlight Commandline %}
-'''
 $ git clone git://github.com/sstephenson/rbenv.git .rbenv
-'''
 {% endhighlight %}
 
 .bash_profile에 다음 행 추가
@@ -174,5 +172,7 @@ sudo /usr/sbin/passenger-memory-stats
 sudo apt-get update
 sudo apt-get upgrade
 {% endhighlight %}
+
+드디어!
 
 ## app deploy 하기

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "node js 따라 배우기"
+title: "ABOUT WEB SERVER"
 date: 2016-08-25
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
