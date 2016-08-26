@@ -16,5 +16,4 @@ peihanxing의 경우에는 이름 궁합을 보는 것이다. 특이한 점은 �
 {%highlight ruby%}
 require 'open-uri'
 require 'nokogiri'
-
 {%endhighlight%}

@@ -17,7 +17,7 @@ tags: home work coding matilda38.github.io
 
 지금은 이해 안될지도 모른다. 일단 잘 살펴보고 뒤에 파일들도 보도록 한다.
 
-comment_controller.rb
+*comment_controller.rb*
 {%highlight ruby%}
 class CommentsController < ApplicationController
   before_action :comment_params, only: [:create]
@@ -135,7 +135,10 @@ _comment.html.erb 파일명을 주목하자 _가 붙어있는 걸 보아 render 
 'remote true'이는 create.js.erb가 작동하게 해준다. 즉, post로 posts/:post_id/commments를 request 하므로 보통 controller에서 create 액션으로 연결되고 당연히 create.html.erb가 작동하지만 우리가 필요한건 create.js.erb이다. ajax를 통해 화면 이동 없이 댓글이 달려야 하기 때문이다. 따라서 create.js.erb로 연결가능하게 만들어 주려면
 'remote: true' option이 꼭 필요하다.
 
-create.js.erb
+
+>ajax 를 가능하게 해준 create.js.erb 이다. 중요! controller의 create action이 수행된 후 호출되는 js이다.
+
+*create.js.erb*
 
 {%highlight js%}
 
@@ -149,7 +152,7 @@ alert("Please submit after commenting...");
 {%endhighlight%}
 
 create.js.erb의 내용을 설명하자면,
-<%=j render @comment%>는 js로 @comment, 즉 controller의 create action을 통해 생성된 댓글 객체의 layout을 render하고 그것을 show action view file에 id= "comment_list_<%=@post.id%>" 인 list에 추가하라는 것이다.
+><%=j render @comment%>는 js로 @comment, 즉 controller의 create action을 통해 생성된 댓글 객체의 layout을 render하고 그것을 show action view file에 id= "comment_list_<%=@post.id%>" 인 list에 추가하라는 것이다.
 그리고 comment_form 은 지워진 상태로 reset한다.
 
 destroy.js.erb

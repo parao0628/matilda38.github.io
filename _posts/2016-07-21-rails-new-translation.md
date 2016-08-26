@@ -9,7 +9,7 @@ thumb: http://pic.prepics-cdn.com/fa8133cef3407/44912513.gif
 categories: development work
 tags: home coding matilda38.github.io
 ---
-**일단 영어 원문을 올려 놓습니다...언젠간 번역할거니까...**
+>**일단 영어 원문을 올려 놓습니다...언젠간 번역할거니까...**
 
 *Rails 5.0: Action Cable, API mode, and so much more*
 
