@@ -1,11 +1,14 @@
 ## nayoong Blog
 This blog is made for studying and sharing my hobby. Occasionally, to remember my 20s life.
 
-studying languages: Ruby, Python, C, C++.
+studying languages:
+Ruby, Python, C, C++.
 
-studying frameworks: Rails, Django.
+studying frameworks:
+Rails, Django.
 
-studying area: Network, Algorithm.
+studying area:
+Network, Algorithm, Server.
 
 ## Introduction
 
