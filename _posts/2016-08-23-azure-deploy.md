@@ -74,21 +74,16 @@ rbenv는 rvm과 같은 루비 설치 관리자라고 생각하시면 됩니다.
 $ git clone git://github.com/sstephenson/rbenv.git .rbenv
 {% endhighlight %}
 
-.bash_profile에 다음 행 추가
-{% highlight Commandline %}
-[ -f "$HOME/.profile" ] && source "$HOME/.profile"
-[ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
-{% endhighlight %}
-
-.bashrc에 다음 추가.
+.bashrc에 다음 추가. (bash_profile 없으면 그냥 bashrc에다가!! ubuntu는 .bashrc)
+[공식문서](https://github.com/rbenv/rbenv)
 
 {% highlight Commandline %}
-export RBENV_ROOT="${HOME}/.rbenv"
-if [ -d "${RBENV_ROOT}" ]; then
-  export PATH="${RBENV_ROOT}/bin:${PATH}"
-  eval "$(rbenv init -)"
-fi
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+~/.rbenv/bin/rbenv init
+type rbenv
 {% endhighlight %}
+
+[ruby-build 설치](https://github.com/rbenv/ruby-build#readme)
 
 rbenv가 저장된 디렉토리를 RBENV_ROOT 환경 변수에 export 하고, rbenv 실행 파일이 들어 있는 디렉토리를 PATH에 추가한다.
 
@@ -103,6 +98,9 @@ rbenv가 설치 된 경로를 PATH에 저장해서 rbenv 실행시 엉뚱한게 
 ## 4. 재설정 및 bundler 설치, 재시작
 
 {% highlight Commandline %}
+# 엄청 오래걸릴 수 있습니다
+rbenv install 2.3.0
+
 rbenv rehash
 rbenv global 2.3.0
 ruby -v
@@ -137,7 +135,9 @@ capistrano는 루비로 작성된 원격 서버 automation과 deployment 툴입�
 
 암튼! 결론은 Passenger라는 툴로 갈아탔습니다. 그래서 이 포스팅이 Passenger+ Nginx 로 RoR Application을 Deploy하기! 가 되었죠 ㅎㅎ
 
-Ubuntu 12.04 LTS (with APT). 제 Azure 계정의 가상 컴퓨터는 위 모델이었기 때문에 해당 모델 버전의 tutorial 을 참고하였습니다.
+기준: Ubuntu 12.04 LTS (with APT).
+
+제 Azure 계정의 가상 컴퓨터는 위 모델이었기 때문에 해당 모델 버전의 tutorial 을 참고하였습니다.
 
 {% highlight Commandline %}
 # PGP key를 받고 설치. APT를 위한 HTTP 지원 추가.
