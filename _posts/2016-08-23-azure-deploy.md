@@ -253,8 +253,19 @@ nginx error들.
 => conf 파일(아마 nginx.conf)를 보면 error log가 어디에 저장되어있는지가 나와있습니다. 해당 파일을 참고하여 에러를 해결해주시면 됩니다. 에러메세지를 구글에다 쳐보세요.
 
 사이트 내부 에러.
-=> 내 application의 log 폴더 => production.rb에 배포 단계의 log 가 나와있습니다. 참고해주세요. 저 같은 경우에 post 라우팅이 안되서 계속 찾아봤더니, nginx 에러가 아니라 code error였습니다.
-code 수정 후 migrate를 수행했는데 그냥 rake db:migrate했더니 development 모드애서만 migrate 가 되었고, production 모드의 경우 수정 전 migrate 만 적용되어 수정사항이 반영되지 않았던 거죠.
-rake db:migrate RAILS_ENV=production rake db:seed RAILS_ENV=production 수행 후엔 해결 되었습니다. 배포 단계에서의 migrate는 따로 해줘야 하는 것을 몰랐던 거죠.
-rails console을 통해 알았어야 하는데 이것 또한 rails console production이라고 해야 배포단계의 console이 나오기 때문에 계속 헤맸습니다. rails console 만 쳐서 development 단계의 migration만 확인하고 왜 안될까 계속 헤맸습니다...ㅠㅠ 무식하면 힘들다.
+=> 내 application의 log 폴더 => production.rb에 배포 단계의 log 가 나와있습니다. **꼭 참고해주세요.**
+
+저 같은 경우에 post 라우팅이 안되서 계속 찾아봤더니, nginx 에러가 아니라 **code error**였습니다. (*var/nginx/error.log 에선 더이상 에러가 없는데 계속 에러가 나는게 이상했죠.*)
+
+code 수정 후 migrate를 수행했는데 그냥 rake db:migrate했더니 development 모드애서만 migrate 가 되었고,
+
+**production 모드의 경우 수정 전 migrate 만 적용되어 수정사항이 반영되지 않았던 거죠.**
+
+rake db:migrate RAILS_ENV=production rake db:seed RAILS_ENV=production 수행 후엔 해결 되었습니다.
+
+배포 단계에서의 migrate는 따로 해줘야 하는 것을 몰랐던 거죠.
+
+rails console을 통해 알았어야 하는데 이것 또한 *rails console production*이라고 해야 배포단계의 console이 나오기 때문에 계속 헤맸습니다.
+
+rails console 만 쳐서 development 단계의 migration만 확인하고 왜 안될까 계속 헤맸습니다...ㅠㅠ 무식하면 힘들다.
 
