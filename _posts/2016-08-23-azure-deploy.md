@@ -194,6 +194,9 @@ production:
 배포 모드를 설정해주는 거에요. nano는 text editor라고 생각하시면 됩니다.
 5. 세션을 암호화하기 위한 비밀 키를 만들어 주세요.
 {% highlight Commandline %}
+# 일단 만약 내가 깃에서 다운 받은 코드가 지금 접속한 user의 권한이 아니라면 권한 설정을 해주어야 한다. 아니면 cd 명령도 안먹힌다.
+sudo chown -R username /var/www/myapp/myapp
+
 bundle exec rake secret
 {% endhighlight %}
 
@@ -206,11 +209,14 @@ nano config/secrets.yml
 production:
   secret_key_base: <%=ENV["SECRET_KEY_BASE"]%> # 이 자리!!
 {% endhighlight %}
+
 6. 본격 배포 시작 전, precomplie과 migrate 수행. 저는 seed까지. (RAILS_ENV=production가 매우 중요합니다. default 는 development이기 떄문에 production 설정을 해주지 않으면 배포시 migrate가 되지 않았던 에러가 날 것입니다.)
+
 {% highlight Commandline %}
 bundle exec rake assets:precompile db:migrate RAILS_ENV=production
 bundle exec rake db:seed RAILS_ENV=production
 {% endhighlight %}
+
 7. passenger가 수행하는 루비버전입니다. 메모해놓으세요. 설정에서 써야됩니다!
 {% highlight Commandline %}
 passenger-config about ruby-command
@@ -234,7 +240,8 @@ server {
 }
 
 curl http://yourserver.com/
-#뭔가가 나오나요?
+# 뭔가가 나오나요?
+# sites-enabled를 확인해서, 내 application 외 default 존재 => 삭제해주세요
 
 sudo service nginx restart
 # 설정을 바꿨다면 서버를 재시작해주세요.
@@ -269,3 +276,8 @@ rails console을 통해 알았어야 하는데 이것 또한 *rails console prod
 
 rails console 만 쳐서 development 단계의 migration만 확인하고 왜 안될까 계속 헤맸습니다...ㅠㅠ 무식하면 힘들다.
 
+
+
+# + 추가 2 (2016. 8. 29 멋사 해커톤)
+gem uglifier 에러
+-> load 할 수 없다는 에러가 떠서 gem 'therubyracer' 이거 uncomment 해줬더니 해결
