@@ -4,7 +4,7 @@ title: "배열 기초."
 date: 2016-10-09
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: http://mblogthumb4.phinf.naver.net/20160315_111/mkhjsk_1458023052522xOxyW_GIF/015.gif?type=w2
+thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/screen1.png
 categories: c algorithm
 tags: c
 ---
