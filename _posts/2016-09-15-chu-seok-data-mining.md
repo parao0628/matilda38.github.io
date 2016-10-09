@@ -4,7 +4,7 @@ title: "데이터 마이닝."
 date: 2016-09-15
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: http://mblogthumb4.phinf.naver.net/20160315_111/mkhjsk_1458023052522xOxyW_GIF/015.gif?type=w2
+thumb: http://cfile2.uf.tistory.com/image/245FBF4D5745D05C123540
 categories: Datamining ML
 tags: ML
 ---
