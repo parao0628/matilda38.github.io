@@ -71,4 +71,10 @@ Bot Framework Emulator(on/offline)을 포함한 디버깅 도구,
 3. Tech 에 따라서 Get started 페이지가 존재한다.
 [Node.js](https://docs.botframework.com/en-us/node/builder/overview/)
 [.Net](https://docs.botframework.com/en-us/csharp/builder/sdkreference/)
-[RestAPI](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html
+[RestAPI](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html)
+
+
+참고--
+
+MS 김영욱 부장님 블로그
+[Microsoft Bot Framework 시작해보기](http://blog.naver.com/PostView.nhn?blogId=warit&logNo=220833049518&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
