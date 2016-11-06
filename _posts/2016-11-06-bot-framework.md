@@ -8,9 +8,15 @@ thumb:
 categories: Microsoft Bot
 tags: Bot
 ---
+
+Bot framework 문서를 번역하면서 공부를 시작한다.
+
+자세한 설명은
+[마이크로 소프트 docs](https://docs.botframework.com)에 나와있으니 참고하시길.
+
 ## Bot Framework Overview
 
-# MS 봇 프레임워크는 유저들이 대화 경험을 즐길수 있도록 높은 품질의 봇들을 만들고 deploy할 수 있도록 하는 framework이다.
+*MS 봇 프레임워크는 유저들이 대화 경험을 즐길수 있도록 높은 품질의 봇들을 만들고 deploy할 수 있도록 하는 framework이다.*
 
 봇을 사용하는 개발자들은 같은 문제를 직면한다: 봇들은 기본적인 i/o를 필요로한다.
 
@@ -19,14 +25,16 @@ tags: Bot
 Bot framework는 Bot Builder SDK와 관리 Portal, Bot Directory로 이루어 진다.
 
 # Bot Builder SDK
+![](https://docs.botframework.com/en-us/images/faq-overview/bot_builder_sdk_july.png)
 Bot Builder SDK는 Node-js, .NET, Rest-API 기반 봇에서 대화를 만들기에 필요한 모든 것을 제공하는, (깃허브에 의해서 호스팅된) 오픈 소스이다.
 
 # Bot Framework Developer Portal
+![](https://docs.botframework.com/en-us/images/faq-overview/developer_portal_july.png)
 
 봇 프레임워크 개발자 포털은 당신의 bot들을 Skype등 유명 서비스에 연결될 수 있도록 한다. 간단히 당신의 봇을 등록하고, 희망되는 채널을 확인하고 봇 directory를 publish한다. 등록된 모든 봇들은 자동 확인된다.
 
 # Bot Directory (개발중) - 다른 사람들이 개발한 봇을 사용해볼 수 있고, 내가 개발한 봇을 평가받을 수 있는 장소.
-
+![](https://docs.botframework.com/en-us/images/faq-overview/bot_directory_july.png)
 봇 Directory는 개발자 포털을 통해 등록된 봇들의 Public Directory이다. 사용자들은 봇 directory에서 그들의 선호하는 대화경험에 봇을 발견하고, 시도하고 더할 수 있을 것이다. 처음엔, Microsoft Build 2016에서 발표된 bot framework의 봇들을 게시할 것이다.
 
 
@@ -50,3 +58,9 @@ Bot Framework Emulator(on/offline)을 포함한 디버깅 도구,
 언어 이해, 30개가 넘는 언어를 자동 번역을 제공하는 LUIS와 같은 cognitive service나, reflection 제공하는 formflow를 활용하여 당신의 봇을 더 똑똑하게 만드는 강력한 확장기능,
 
 을 할 수 있다.
+
+# microsoft가 bot frame work를 개발하는 이유
+
+결국 플랫폼사업때문이겠지만,
+
+While the “CUI is upon us,” at this point few developers have the expertise and tools needed to create new conversational experiences or enable existing applications and services with a conversational interface their users can enjoy. We have created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse including on Microsoft’s premier channels.
