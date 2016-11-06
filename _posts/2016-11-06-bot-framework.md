@@ -59,8 +59,16 @@ Bot Framework Emulator(on/offline)을 포함한 디버깅 도구,
 
 을 할 수 있다.
 
-# microsoft가 bot frame work를 개발하는 이유
+# Microsoft가 bot framework를 개발하는 이유
 
 결국 플랫폼사업때문이겠지만,
+“cui가 우리에게 있다”.라는 측면에서 이런 새로운 대화형 경험을 구축하는데 필요한 도구나 전문성을 가진 개발자는 드물다. 우리는 개발자들이 봇을 만들고 user에게 연결하는것을 쉽게 하기 위하여 bot framework을 만들었다.
 
-While the “CUI is upon us,” at this point few developers have the expertise and tools needed to create new conversational experiences or enable existing applications and services with a conversational interface their users can enjoy. We have created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse including on Microsoft’s premier channels.
+# 끝으로, Bot framework를 시작하는 방법.
+
+1. [공식 홈페이지](https://dev.botframework.com/)에 접속하면 각종 정보를 얻을 수 있다.
+2. Developer portal에 봇을 등록하기 위해서, microsoft 계정이 필요하다.
+3. Tech 에 따라서 Get started 페이지가 존재한다.
+[Node.js](https://docs.botframework.com/en-us/node/builder/overview/)
+[.Net](https://docs.botframework.com/en-us/csharp/builder/sdkreference/)
+[RestAPI](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html
