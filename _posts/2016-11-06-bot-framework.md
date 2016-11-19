@@ -4,7 +4,7 @@ title: "Bot framework seminar 준비"
 date: 2016-11-06
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb:
+thumb: https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_960_720.png
 categories: Microsoft Bot
 tags: Bot
 ---

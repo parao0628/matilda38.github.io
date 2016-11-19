@@ -3,8 +3,8 @@ layout: post
 title: "여행 어플리케이션"
 date: 2016-11-19
 backgrounds:
-    - http://feelgrafix.com/data/background/background-9.jpg
-thumb:
+    - https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%92%E1%85%A1...jpg
+thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%80%E1%85%B1%E1%84%8B%E1%85%A7%E1%86%B8.jpeg
 categories: hobby Trip
 tags:
 ---
