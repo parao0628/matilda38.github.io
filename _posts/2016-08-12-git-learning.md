@@ -4,7 +4,7 @@ title: "Git!"
 date: 2016-08-12
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/111.jpg
+thumb: http://www.moxie.io/images/git-operations.png
 categories: development study
 tags: home coding
 ---

@@ -4,7 +4,7 @@ title: "변화들."
 date: 2016-09-05
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: http://mblogthumb4.phinf.naver.net/20160315_111/mkhjsk_1458023052522xOxyW_GIF/015.gif?type=w2
+thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%84%8C%E1%85%B5.jpg
 categories: new
 tags: changes new
 ---
