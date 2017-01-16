@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thread와 Process의 차이"
-date: 2016-01-16
+date: 2017-01-16
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
 thumb: http://www.tooli.co.kr/files/attach/images/571585/680/575/%EC%8A%A4%EB%A7%88%EC%9D%BC%20%EA%B0%95%EC%95%84%EC%A7%80.jpg
