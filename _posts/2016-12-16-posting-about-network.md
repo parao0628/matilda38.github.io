@@ -15,22 +15,22 @@ tags:
 네트워크 수업...정말 어렵기도했지만 막상 끝나니깐...아쉬웠어요. 나름 재밌게 들었었는데..내 한학기ㅠㅠㅋㅋㅋㅋ 교수님 사랑합니다.
 
 
-![1](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/1.png)
-![2](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/2.png)
-![3](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/3.png)
-![4](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/4.png)
-![5](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/5.png)
-![6](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/6.png)
-![7](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/7.png)
-![8](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/8.png)
-![9](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/9.png)
-![10](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/10.png)
-![11](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/11.png)
-![12](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/12.png)
-![13](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/13.png)
-![14](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/14.png)
-![15](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/15.png)
-![16](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/16.png)
+![1](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/1.png)<br />
+![2](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/2.png)<br />
+![3](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/3.png)<br />
+![4](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/4.png)<br />
+![5](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/5.png)<br />
+![6](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/6.png)<br />
+![7](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/7.png)<br />
+![8](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/8.png)<br />
+![9](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/9.png)<br />
+![10](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/10.png)<br />
+![11](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/11.png)<br />
+![12](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/12.png)<br />
+![13](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/13.png)<br />
+![14](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/14.png)<br />
+![15](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/15.png)<br />
+![16](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/16.png)<br />
 ![17](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/17.png)
 
 

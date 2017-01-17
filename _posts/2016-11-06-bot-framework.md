@@ -74,15 +74,15 @@ cui에 관해 짧게 번역해봤다
 
 # 끝으로, Bot framework를 시작하는 방법.
 
-1. [공식 홈페이지](https://dev.botframework.com/)에 접속하면 각종 정보를 얻을 수 있다.
-2. Developer portal에 봇을 등록하기 위해서, microsoft 계정이 필요하다.
-3. Tech 에 따라서 Get started 페이지가 존재한다.
-[Node.js](https://docs.botframework.com/en-us/node/builder/overview/)
-[.Net](https://docs.botframework.com/en-us/csharp/builder/sdkreference/)
+1. [공식 홈페이지](https://dev.botframework.com/)에 접속하면 각종 정보를 얻을 수 있다.<br />
+2. Developer portal에 봇을 등록하기 위해서, microsoft 계정이 필요하다.<br />
+3. Tech 에 따라서 Get started 페이지가 존재한다.<br />
+[Node.js](https://docs.botframework.com/en-us/node/builder/overview/)<br />
+[.Net](https://docs.botframework.com/en-us/csharp/builder/sdkreference/)<br />
 [RestAPI](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html)
 
 
 참고--
 
-MS 김영욱 부장님 블로그
+MS 김영욱 부장님 블로그<br />
 [Microsoft Bot Framework 시작해보기](http://blog.naver.com/PostView.nhn?blogId=warit&logNo=220833049518&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)

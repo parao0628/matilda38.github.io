@@ -13,11 +13,11 @@ tags: home coding
 
 Thread의 종류
 
--       User level threads (application)
+<span style="color:#003366">-       User level threads (application)</span>
 
--       Kernel level thread (operating system)
+<span style="color:#003366">-       Kernel level thread (operating system)</span>
 
--       Hardware Threads (each processor)
+<span style="color:#003366">-       Hardware Threads (each processor)</span>
 
 
 
@@ -29,7 +29,7 @@ Single Thread: => process 단위 스케줄링
 
 But,
 
-Thread 단위 scheduling
+# Thread 단위 scheduling
 
 Multi-thread => 자원 사용 확률 (thread가 늘어 날 수 록 선점효과 상승). 연산량/ Real-time/ Delay-critical한 Application들에 사용.
 
@@ -49,9 +49,9 @@ VM은 자기 자신이 그냥 Machine 인줄 알기 때문에 (OS 그대로 넣�
 
 
 
-vcpu affinity: vcpu – pcpu 간의 연결. (관리자 지정) – pinning 과 비슷한 개념.
+# <span style="color:#003366">vcpu affinity: vcpu – pcpu 간의 연결. (관리자 지정) – pinning 과 비슷한 개념.</span>
 
-NUMA(Non Uniform Memory Access) : 일종의 processor 설계 방법으로, 메모리 접근 속도를 높이기 위해 core를 분산하여 설계.
+*NUMA(Non Uniform Memory Access) : 일종의 processor 설계 방법으로, 메모리 접근 속도를 높이기 위해 core를 분산하여 설계.*
 
 NUMA node 1, NUMA node 2 이런 식으로 분할한다.
 

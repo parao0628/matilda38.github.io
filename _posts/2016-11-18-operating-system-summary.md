@@ -71,10 +71,11 @@ Thread는 실타래라는 뜻을 가지고 있듯이, 한 프로그램 내의 �
 
 또한, 위 그림과 같이 각 Thread는 각각의 register를 가지지만, 다른 Thread들과 Heap, Code, Data를 공유한다. 즉, stack을 제외한 메모리 부분을 공유한다.
 
-> stack: 지역변수 할당과 함수 호출 시 전달되는 인자값들의 저장하기 위한 공간
-heap: C의 malloc, calloc과 C++의 new를 통한 동적 할당을 위해 존재하는 공간
-data: 전역변수나 static 변수의 할당을 위해 존재하는 공간
-code(text): 프로그램을 실행시키면 실행파일 내에 존재하는 명령어가 메모리 상에 올라가야지 프로그램을 동작시킬 수 있을 것이다. 이 명령어들을 위해 존재하는 공간.
+<span style="color:green"> - stack: 지역변수 할당과 함수 호출 시 전달되는 인자값들의 저장하기 위한 공간</span><br />
+<span style="color:green"> - heap: C의 malloc, calloc과 C++의 new를 통한 동적 할당을 위해 존재하는 공간</span><br />
+<span style="color:green"> - data: 전역변수나 static 변수의 할당을 위해 존재하는 공간</span><br />
+<span style="color:green"> - code(text): 프로그램을 실행시키면 실행파일 내에 존재하는 명령어가 메모리 상에 올라가야지 프로그램을 동작시킬 수 있을 것이다. 이 명령어들을 위해 존재하는 공간.</span>
+
 
 출처: http://mooneegee.blogspot.kr/2015/01/os-process.html
 
