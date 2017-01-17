@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thread와 Process의 차이"
+title: "Scheduling 의 관점에서 본 Thread"
 date: 2017-01-16
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg

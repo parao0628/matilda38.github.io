@@ -4,7 +4,7 @@ title: "네트워크 기말정리"
 date: 2016-12-16
 backgrounds:
     - https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%92%E1%85%A1...jpg
-thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%80%E1%85%B1%E1%84%8B%E1%85%A7%E1%86%B8.jpeg
+thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%84%8C%E1%85%B5.jpg
 categories: network
 tags:
 ---

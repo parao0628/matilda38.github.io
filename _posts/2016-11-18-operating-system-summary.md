@@ -4,13 +4,13 @@ title: "operating system 요약"
 date: 2016-11-18
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
-thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A6%E1%84%92%E1%85%AE%E1%86%AB.jpg
+thumb: https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A1%E1%84%8C%E1%85%B5.jpg
 categories: OS
 tags: os
 ---
 ![how to interact with hardware](http://i.dailymail.co.uk/i/pix/2009/07/08/article-1198262-05A2F11C000005DC-856_233x353.jpg)
 
-## OS는 무엇일까?
+# <span style="color:#003366;font-size:2em;">OS란 뭘까?</span>
 
 사용자(USER)가 hardware를 직접 다루기는 힘들다. 이때 사용자와 hardware를 연결(bridge)하는 역할을 맡은게 운영체제이다.
 
@@ -40,8 +40,7 @@ cpu 및 자원들이 공통된 bus를 통해 shared memory에 접근하는 극�
 ![concurrent execution of cpus and devices competing for memory cycle](https://s3.ap-northeast-2.amazonaws.com/matilda38.github.io/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2016-11-20+%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE+2.48.10.png)
 "메모리 cycle을 위해 경쟁하는 cpu와 device들의 병렬적 execution" 을 담고있는 그림이다.
 
-
-# Process란 무엇인가
+# <span style="color:#003366;font-size:em;">Process란 무엇인가</span>
 
 Process란 간단히, 실행중에 있는 Program이다. 영어로, process is a particular executing instance of a program when loaded to main memory.
 
@@ -60,8 +59,8 @@ Process란 간단히, 실행중에 있는 Program이다. 영어로, process is a
 
 ![](https://elgaabeb.files.wordpress.com/2011/01/process_memory_organization.png?w=598&h=464)
 
+# <span style="color:#003366;font-size:em;">그 단점을 해결하는 Thread</span>
 
-# 그 단점을 해결하는 Thread
 
 ![출처: wikipedia](http://1.bp.blogspot.com/-IuOPNytNwqc/VMVK_OX4raI/AAAAAAAAACc/ZoDkKILClvk/s1600/2000px-Multithreaded_process.svg.png)
 
