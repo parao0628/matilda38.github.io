@@ -9,6 +9,8 @@ categories: development study
 tags: home coding
 ---
 
+11-18 게시물에 OS의 입장에서 바라본 프로세스와 쓰레드에 대해서 포스팅헸다. 오늘 포스팅은 Kernel단과 Hardware단의 Thread에, 특히 스케줄링에 중점을 두어 포스팅하겠다.
+
 Thread의 종류
 
 -       User level threads (application)
@@ -61,4 +63,5 @@ Vcpu가 Pcpu 개수 이상이면, overbooking이라고 한다. => Public Cloud�
 
 *  네트워크에서 동적 주소 할당과 비슷한 개념.
 
-![](http://mooneegee.blogspot.kr/2015/01/os-thread.html)
+[관련 자료 링크](http://mooneegee.blogspot.kr/2015/01/os-thread.html)
+
