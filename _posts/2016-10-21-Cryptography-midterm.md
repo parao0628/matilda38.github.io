@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cryptography 중간고사"
+title: "Network Cryptography 중간고사"
 date: 2016-10-21
 backgrounds:
     - http://feelgrafix.com/data/background/background-9.jpg
